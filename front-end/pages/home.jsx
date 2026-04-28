@@ -1,10 +1,6 @@
-
-
 function Home() { 
   return (
     <>
-
-
       <ul className="descricao">
         <li className="objtop">Tecnologias Utilizadas</li>
         <li className="obj">⚛️ React</li>
