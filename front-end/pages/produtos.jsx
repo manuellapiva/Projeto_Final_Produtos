@@ -86,7 +86,7 @@ function Produtos() {
         <input className={style.input} name="estoque" placeholder="Estoque" value={form.estoque} onChange={handleChange} />
         <input className={style.input} name="categoria" placeholder="Categoria" value={form.categoria} onChange={handleChange} />
 
-        <button className={style.btn} type="submit">
+        <button className={style.btnup} type="submit">
           {produtoEditando ? "Atualizar" : "Cadastrar"}
         </button>
       </form>
@@ -98,13 +98,13 @@ function Produtos() {
       <ul className={style.lista}>
         {produtos.map(p => (
           <li key={p.id} className={style.item}>
-            <span>
-              {p.nome} - R$ {p.preco} | Estoque: {p.estoque} | {p.categoria}
-            </span>
+            <div className={style.span}>
+              {p.nome} | R$ {p.preco} | Estoque: {p.estoque} | {p.categoria}
+            </div>
 
             <div className={style.acoes}>
-              <button className={style.btn} onClick={() => editar(p)}>✏️</button>
-              <button className={style.btn} onClick={() => deletar(p.id)}>🗑️</button>
+              <button className={style.btn} onClick={() => editar(p)}>✏️ Editar</button>
+              <button className={style.btn} onClick={() => deletar(p.id)}>🗑️ Deletar</button>
             </div>
           </li>
         ))}
