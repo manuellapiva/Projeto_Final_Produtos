@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 // Importar as funções do Controller
-const ProdutoController = require('../controllers/prodpgController');
+const ProdutoController = require('../controllers/prodController');
 
 // ============================================================
 // DEFINIÇÃO DAS ROTAS

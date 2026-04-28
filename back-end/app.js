@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('./src/public'));
 app.use(express.json());
 
-const prodpgRoutes = require('./src/routes/prodpgRoutes');
-app.use('/produtos', prodpgRoutes);
+const prodRoutes = require('./src/routes/prodRoutes');
+app.use('/produtos', prodRoutes);
 app.get('/', (req, res) => {
   res.json({ 
     mensagem: 'API de Produtos com PostgreSQL',

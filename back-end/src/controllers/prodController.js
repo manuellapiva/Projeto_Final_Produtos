@@ -1,5 +1,5 @@
 // Importar as funções do Model
-const ProdutoModel = require('../models/prodpgModel');
+const ProdutoModel = require('../models/prodModel');
 
 // ============================================================
 // FUNÇÃO: listarTodos (ASSÍNCRONA)
