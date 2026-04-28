@@ -15,10 +15,6 @@ body {
     line-height: 1.6;
 }
 
-/* ========================================
-   CABEÇALHO
-   ======================================== */
-
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #ffffff;
@@ -38,10 +34,6 @@ header {
     opacity: 0.9;
     font-weight: 300;
 }
-
-/* ========================================
-   CONTAINER PRINCIPAL
-   ======================================== */
 
 .container {
   padding: 40px;
