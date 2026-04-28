@@ -1,3 +1,4 @@
+import './produtos.module.css'
 function Produtos() {
   return (
    <>
