@@ -1,16 +1,159 @@
-# React + Vite
+# 📦 SISTEMA DE GESTÃO DE PRODUTOS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna desenvolvida com React que permite gerenciar produtos de forma completa, realizando operações de cadastro, listagem, edição e exclusão. Este projeto demonstra a integração entre front-end e backend através de requisições HTTP.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Sobre
 
-## React Compiler
+O **Sistema de Gestão de Produtos** é uma aplicação interativa desenvolvida com React e Vite, com foco na comunicação com uma API RESTful.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O sistema permite ao usuário:
 
-## Expanding the ESLint configuration
+* cadastrar novos produtos
+* visualizar todos os produtos cadastrados
+* editar informações existentes
+* excluir produtos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Conceito:** O cliente (React) se comunica com um servidor backend por meio de requisições HTTP (Fetch API), realizando operações CRUD em tempo real.
+
+---
+
+## 📦 Instalação
+
+### Setup
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone <link-do-repositorio>
+   cd projeto-final-produtos
+   ```
+
+2. **Instale as dependências do front-end:**
+
+   ```bash
+   cd front-end
+   npm install
+   ```
+
+---
+
+## 🚀 Rodando o Projeto
+
+### 🔹 Backend
+
+Acesse a pasta do backend e execute:
+
+```bash
+npm install
+node app.js
+```
+
+---
+
+### 🔹 Frontend
+
+Acesse a pasta do front-end:
+
+```bash
+npm run dev
+```
+
+---
+
+### 🌐 Acesse no navegador
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔌 API Utilizada
+
+O projeto consome uma API REST desenvolvida previamente por nós para gerenciamento de produtos.
+
+### 📋 Rotas disponíveis:
+
+### 🔍 Listar produtos:
+
+```
+GET /produtos
+```
+
+### ➕ Criar produto:
+
+```
+POST /produtos
+```
+
+### ✏️ Atualizar produto:
+
+```
+PUT /produtos/{id}
+```
+
+### 🗑️ Deletar produto:
+
+```
+DELETE /produtos/{id}
+```
+
+---
+
+## 🎯 Funcionalidades
+
+* 📋 Listagem de produtos
+* ➕ Cadastro de novos produtos
+* ✏️ Edição de produtos existentes
+* 🗑️ Exclusão de produtos
+* ⏳ Feedback de carregamento
+* ❌ Tratamento de erros
+* 📭 Exibição de lista vazia
+* 🔀 Navegação entre páginas (React Router)
+* 🎨 Interface organizada e responsiva
+
+---
+
+## 🎯 Exemplo de Uso
+
+1. Abra o sistema no navegador.
+2. Acesse a aba **Produtos**.
+3. Preencha o formulário para cadastrar um novo produto.
+4. Veja o produto aparecer na lista.
+5. Clique em **Editar** para alterar informações.
+6. Clique em **Excluir** para remover o produto.
+
+---
+
+## 📝 Notas
+
+* O backend deve estar rodando para o sistema funcionar
+* Os dados são armazenados no banco de dados do servidor
+* A aplicação utiliza Fetch API para comunicação com o backend
+* Requer conexão com o servidor local (`localhost:3000`)
+* Utiliza React Hooks (`useState`, `useEffect`)
+
+---
+
+## 👨‍💻 Tecnologias Utilizadas
+
+* ⚛️ React
+* ⚡ Vite
+* 🧠 JavaScript (ES6+)
+* 🔀 React Router
+* 🌐 Fetch API
+* 🎨 CSS
+
+---
+
+## 👥 Integrantes
+
+* Manuella da Silva Piva
+* Ayla Cristina da Silva Vilela
+* Maria Vitória Guedes Ferreira
+* Gabriella Camacho Stavarengo
+* Gustavo Millamonte
+
+---

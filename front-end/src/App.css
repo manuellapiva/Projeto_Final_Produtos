@@ -1,21 +1,43 @@
-
-*{
-  margin: 0%;
-  padding: 0%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.toopbar {
-  background-color: rgb(150, 190, 224);
-  color: rgb(0, 0, 0);
-  height: 70px;
-  display: flex;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.toopbar h1{
-  display: flex;
+.topbar {
+  background: #4f46e5;
+  color: white;
+  padding: 15px;
   text-align: center;
-  align-items: center;
-  padding-left: 420px;
-
 }
- 
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #3730a3;
+  padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #c7d2fe;
+}
+
+.content {
+  min-height: 59.5vh;
+  padding: 20px;
+}
+
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
