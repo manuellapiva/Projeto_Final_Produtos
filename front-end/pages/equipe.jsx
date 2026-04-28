@@ -1,9 +1,9 @@
 import style from "./equipe.module.css";
-import i1 from "../src/IMG/manu.PNG";
-import i2 from "../src/IMG/ayla.PNG";
-import i3 from "../src/IMG/mavi2.PNG";
-import i4 from "../src/IMG/gabi.PNG";
-import i5 from "../src/IMG/gustavo.PNG";
+import i1 from "../src/assets/IMG/manu.PNG";
+import i2 from "../src/assets/IMG/ayla.PNG";
+import i3 from "../src/assets/IMG/mavi2.PNG";
+import i4 from "../src/assets/IMG/gabi.PNG";
+import i5 from "../src/assets/IMG/gustavo.PNG";
 
 function Equipe() {
   return (

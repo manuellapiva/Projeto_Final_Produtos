@@ -6,7 +6,7 @@ import  './App.css'
 function App() {
   return (
    <>
-    <header className="toopbar">
+    <header className="topbar">
        <h1>Sistema de Gestão de Produtos Grupo - 2</h1>
     </header>
           <nav className="menu">
