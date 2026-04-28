@@ -43,7 +43,13 @@ O sistema permite ao usuário:
 
 ### 🔹 Backend
 
-Acesse a pasta do backend e execute:
+Acesse a pasta do backend com : 
+
+```bash
+cd back-end
+```
+
+E execute:
 
 ```bash
 npm install
@@ -54,7 +60,13 @@ node app.js
 
 ### 🔹 Frontend
 
-Acesse a pasta do front-end:
+Acesse a pasta do front-end com:
+
+```bash
+cd front-end
+```
+
+E execute:
 
 ```bash
 npm run dev
