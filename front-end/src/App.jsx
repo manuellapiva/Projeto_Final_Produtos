@@ -3,6 +3,8 @@ import Produtos from '../pages/Produtos'
 import Home from '../pages/Home'
 import Equipe from '../pages/Equipe'
 import  './App.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
    <>
@@ -28,6 +30,7 @@ function App() {
           Desenvolvido para atividade final de Desenvolvimento de Sistemas - Front-End
         </p>
       </footer>
+      <ToastContainer position="top-right" autoClose={3000} theme="colored" />
    </>
   );
 }

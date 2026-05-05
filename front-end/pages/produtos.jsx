@@ -7,6 +7,7 @@ import {
 } from "../src/services/prodService";
 
 import style from "./Produtos.module.css";
+import { toast } from "react-toastify";
 
 function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -26,18 +27,21 @@ function Produtos() {
     carregarProdutos();
   }, []);
 
-  async function carregarProdutos() {
-    try {
-      setLoading(true);
-      setErro(false);
-      const dados = await getProdutos();
-      setProdutos(dados);
-    } catch {
-      setErro(true);
-    } finally {
-      setLoading(false);
-    }
+async function carregarProdutos() {
+  try {
+    setLoading(true);
+    setErro(false);
+
+    const dados = await getProdutos();
+    setProdutos(dados);
+
+  } catch {
+    setErro(true);
+    toast.error("Erro ao carregar produtos!");
+  } finally {
+    setLoading(false);
   }
+}
 
   function handleChange(e) {
     setForm({
@@ -51,30 +55,43 @@ function Produtos() {
     setForm(p);
   }
 
-  async function deletar(id) {
-    if (!confirm("Excluir produto?")) return;
+async function deletar(id) {
+  if (!confirm("Excluir produto?")) return;
+
+  try {
     await deletarProduto(id);
+    toast.success("Produto deletado com sucesso!");
     carregarProdutos();
+  } catch {
+    toast.error("Erro ao deletar produto!");
+  }
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  if (!form.nome || !form.preco || !form.estoque || !form.categoria) {
+    toast.warning("Preencha todos os campos!");
+    return;
   }
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-
-    if (!form.nome || !form.preco || !form.estoque || !form.categoria) {
-      alert("Preencha tudo!");
-      return;
-    }
-
+  try {
     if (produtoEditando) {
       await atualizarProduto(produtoEditando.id, form);
+      toast.info("Produto atualizado!");
     } else {
       await criarProduto(form);
+      toast.success("Produto cadastrado!");
     }
 
     setForm({ nome: "", preco: "", estoque: "", categoria: "" });
     setProdutoEditando(null);
     carregarProdutos();
+
+  } catch {
+    toast.error("Erro ao salvar produto!");
   }
+}
 
   return (
     <div className={style.container}>
