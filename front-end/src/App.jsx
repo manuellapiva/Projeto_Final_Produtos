@@ -6,7 +6,6 @@ import  './App.css'
 function App() {
   return (
    <>
-   <div className="full">
     <header className="topbar">
        <h1>Sistema de Gestão de Produtos <br />Grupo - 2</h1>
     </header>
@@ -29,7 +28,6 @@ function App() {
           Desenvolvido para atividade final de Desenvolvimento de Sistemas - Front-End
         </p>
       </footer>
-      </div>
    </>
   );
 }

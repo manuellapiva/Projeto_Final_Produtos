@@ -1,6 +1,20 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 
 .topbar {
@@ -34,13 +48,9 @@ body {
 }
 
 footer {
-  background: #111;
+  background: #111111;
   color: #ccc;
   text-align: center;
   padding: 15px;
   font-size: 14px;
-}
-
-.full {
-  min-height: 100vh;
 }
