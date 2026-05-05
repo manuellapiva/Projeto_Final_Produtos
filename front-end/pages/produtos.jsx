@@ -105,7 +105,6 @@ async function handleSubmit(e) {
     <div className={style.container}>
       <h1 className={style.title}>Produtos</h1>
 
-      {/* FORM */}
       <form className={style.form} onSubmit={handleSubmit}>
         <input
           className={style.input}
@@ -136,7 +135,7 @@ async function handleSubmit(e) {
           onChange={handleChange}
         />
 
-        <button className={style.btn} type="submit">
+        <button className={style.btnup} type="submit">
           {produtoEditando ? "Atualizar" : "Cadastrar"}
         </button>
       </form>
@@ -146,7 +145,7 @@ async function handleSubmit(e) {
       <input
         className={style.buscaInput}
         type="text"
-        placeholder=" Buscar produto..."
+        placeholder="🔍 Buscar produto..."
         value={busca}
         onChange={(e) => setBusca(e.target.value)}
       />
@@ -168,12 +167,12 @@ async function handleSubmit(e) {
               <p>R$ {p.preco} | Estoque: {p.estoque} | {p.categoria}</p>
             </div>
 
-            <div>
+            <div className={style.acoes}>
               <button className={style.btn} onClick={() => editar(p)}>
-                Editar
+                ✍ Editar
               </button>
               <button className={style.btn} onClick={() => deletar(p.id)}>
-                Deletar
+                ❌ Deletar
               </button>
             </div>
           </li>
