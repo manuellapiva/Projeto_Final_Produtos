@@ -36,7 +36,10 @@ O sistema permite ao usuário:
    cd front-end
    npm install
    ```
-
+   2.1. Se necessário, faça a instalação do toast : 
+   ```bash
+   npm install react-toastify
+   ```
 ---
 
 ## 🚀 Rodando o Projeto
