@@ -14,7 +14,7 @@ function Produtos() {
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
 
-  const [busca, setBusca] = useState("");
+  const [busca, setBusca] = useState(""); 
 
   const [form, setForm] = useState({
     nome: "",
